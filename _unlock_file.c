@@ -1,4 +1,4 @@
-int _unlock(FILE *file){
+int _unlock_file(FILE *file){
 	if(file >= _iob && file <= &_iob[19]){
 		file->_flag &= ~0x8000;
 		return _unlock((file - _iob) + 0x10);
