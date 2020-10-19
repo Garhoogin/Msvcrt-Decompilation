@@ -1,3 +1,3 @@
 int _fputwchar(int c){
-	return _fputwc(c, &_iob[1]);
+	return fputwc(c, &_iob[1]);
 }
